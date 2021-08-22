@@ -13,3 +13,5 @@ When we create many custom matchers, then it becomes annoying to import <br/>
 them all individually. Hamcrest ships with a org.hamcrest.generator.config.XmlConfigurator <br/>
 command-line tool that picks up predicates annotated with the @Factory annotation and  <br/>
 collects them in a Matcher classfor easy importing. <br/>
+Hamcrest supports creating customized assertion matchers ('Hamcrest' is an anagram of 'matchers'),  <br/>
+allowing match rules to be defined declaratively. <br/>
