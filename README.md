@@ -17,4 +17,4 @@ Hamcrest supports creating customized assertion matchers ('Hamcrest' is an anagr
 allowing match rules to be defined declaratively. <br/> 
 
 Parameterized tests are used for multiple iterations over a single input to stress the <br/> 
-object in test. The primary reason is to reduce the amount of test code. <br/> 
+object in test. The primary reason is to reduce the amount of test code. <br/>  
