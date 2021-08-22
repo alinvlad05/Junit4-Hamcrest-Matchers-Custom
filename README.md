@@ -18,3 +18,11 @@ allowing match rules to be defined declaratively. <br/>
 
 Parameterized tests are used for multiple iterations over a single input to stress the <br/> 
 object in test. The primary reason is to reduce the amount of test code. <br/>  
+If the dataset returns an empty collection, the test doesn't fail;nothing happens. <br/> 
+If the number of parameters in the object array and the constructor argument don't match,  <br/> 
+then a java.lang.IllegalArgumentException: wrong number of arguments  <br/> 
+exception is thrown.  <br/> 
+For example, { 0, 1, 3 } will throw an exception as 3  <br/> 
+arguments are passed, but constructor can accept only 2. <br/> 
+If the constructor is not defined but the data set contains a value, then  <br/> 
+the java.lang.IllegalArgumentException: wrong number of arguments exception is thrown. <br/> 
