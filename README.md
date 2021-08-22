@@ -14,4 +14,4 @@ them all individually. Hamcrest ships with a org.hamcrest.generator.config.XmlCo
 command-line tool that picks up predicates annotated with the @Factory annotation and  <br/>
 collects them in a Matcher classfor easy importing. <br/>
 Hamcrest supports creating customized assertion matchers ('Hamcrest' is an anagram of 'matchers'),  <br/>
-allowing match rules to be defined declaratively. <br/>
+allowing match rules to be defined declaratively. <br/> 
