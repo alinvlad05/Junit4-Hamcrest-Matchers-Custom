@@ -8,7 +8,7 @@ The assertThat method will pass the actual value to the matcher's  <br/>
 matches(Object o) method, and lessThanOrEqual will accept a value  <br/>
 to compare with the actual. In the matches method, we need two  <br/>
 comparable objects: one passed as a parameter and the other passed to a <br/>
-matcher object.<br/>
+matcher object.<br/> 
 When we create many custom matchers, then it becomes annoying to import <br/>
 them all individually. Hamcrest ships with a org.hamcrest.generator.config.XmlConfigurator <br/>
 command-line tool that picks up predicates annotated with the @Factory annotation and  <br/>
