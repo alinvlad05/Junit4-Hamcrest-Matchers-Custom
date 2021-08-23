@@ -26,3 +26,10 @@ For example, { 0, 1, 3 } will throw an exception as 3  <br/>
 arguments are passed, but constructor can accept only 2. <br/> 
 If the constructor is not defined but the data set contains a value, then  <br/> 
 the java.lang.IllegalArgumentException: wrong number of arguments exception is thrown. <br/> 
+
+The ErrorCollector rule allows the execution of a test to continue after the first   <br/> 
+problem is found (for example, to collect all the incorrect rows in a table and report   <br/> 
+them all at once)   <br/> 
+
+Verifier's verify method is executed after each test execution. If the verify method   <br/> 
+defines any assertions, and that assertion fails, then the test is marked as failed.  <br/> 
