@@ -33,3 +33,6 @@ them all at once)   <br/>
 
 Verifier's verify method is executed after each test execution. If the verify method   <br/> 
 defines any assertions, and that assertion fails, then the test is marked as failed.  <br/> 
+
+
+To install Mockito, you need to download mockito-all-1.9.5.jar not mockito-core-1.9.5 because you will get java.lang.NoClassDefFoundError: org/objenesis/ObjenesisStd ERROR!
