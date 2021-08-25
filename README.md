@@ -101,3 +101,27 @@ example: when(spy.get(0)).thenReturn("not reachable"); //IndexOutofBoundsExcepti
 This can be protected using doReturn() as shown in the following code:<br/>
 doReturn("now reachable").when(spy).get(0);<br/>
 assertEquals("now reachable", spy.get(0));<br/>
+
+Mockito allows us to change the default settings. <br/>
+The following are the allowed settings: <br/>
+• RETURNS_DEFAULTS: This is the default setting. It returns null for object, false for Boolean, and so on. <br/>
+• RETURNS_SMART_NULLS: This returns spy of a given type. <br/>
+(Unstubbed methods often return null. If your code uses the object returned by an unstubbed call you get a NullPointerException. <br/>
+This implementation of Answer returns SmartNull instead of null. <br/>
+SmartNull gives nicer exception message than NPE because it points out the line where unstubbed method was called. <br/>
+You just click on the stack trace.) <br/>
+• RETURNS_MOCKS: This returns mocks for objects and the default value for primitives. <br/>
+• RETURNS_DEEP_STUBS: This returns a deep stub. (Verification only works with the last mock in the chain.)<br/>
+• CALLS_REAL_METHODS: This calls a real method.<br/>
+A reset method clears the stubs. <br/>
+Mockito.mockingDetails identifies whether a particular object is a mock or a spy. <br/>
+The difference is that in mock, you are creating a complete mock or fake object while in spy, <br/>
+there is the real object and you just spying or stubbing specific methods of it. <br/>
+
+Behavior-driven development with Mockito <br/>
+BDDMockito class introduces an alias so that we can stub method calls with the given(object) method. <br/>
+The following methods are used in conjunction with given: <br/>
+• willReturn(a value to be returned): This returns a given value. <br/>
+• willThrow(a throwable to be thrown): This throws a given exception. <br/>
+• will(Answer answer) and willAnswer(Answer answer): This is similar to then(answer) and thenAnswer(answer.) <br/>
+• willCallRealMethod(): This calls the real method on the mock object or spy. <br/>
