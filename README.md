@@ -125,3 +125,20 @@ The following methods are used in conjunction with given: <br/>
 • willThrow(a throwable to be thrown): This throws a given exception. <br/>
 • will(Answer answer) and willAnswer(Answer answer): This is similar to then(answer) and thenAnswer(answer.) <br/>
 • willCallRealMethod(): This calls the real method on the mock object or spy. <br/>
+
+
+# Designing for testability
+We cannot unit test code when testing impediments are present; we refactor the code and move the <br/>
+impediments out (to another class or methods), and during testing, the impediments <br/>
+are replaced with mock objects. <br/>
+The following Java constructs go up against mocking the  <br/>
+testing impediments:<br/>
+• Constructors initialize testing impediments
+• Class-level variable declaration and initialization
+• The private methods
+• The final methods
+• The static methods
+• The final classes
+• Use of new
+• Static variable declaration and initialization
+• Static initialization blocks
