@@ -133,12 +133,12 @@ impediments out (to another class or methods), and during testing, the impedimen
 are replaced with mock objects. <br/>
 The following Java constructs go up against mocking the  <br/>
 testing impediments:<br/>
-• Constructors initialize testing impediments
-• Class-level variable declaration and initialization
-• The private methods
-• The final methods
-• The static methods
-• The final classes
-• Use of new
-• Static variable declaration and initialization
-• Static initialization blocks
+• Constructors initialize testing impediments <br/>
+• Class-level variable declaration and initialization <br/>
+• The private methods <br/>
+• The final methods <br/>
+• The static methods<br/>
+• The final classes<br/>
+• Use of new<br/>
+• Static variable declaration and initialization<br/>
+• Static initialization blocks<br/>
